@@ -77,7 +77,7 @@
             <div id="img-profile-header">
                <img src="./assets/img/user.svg" alt="user-icon" srcset="">
             </div>
-            <p>User</p>
+            <p>Mahasiswa</p>
         </div>
     </div>
     <!-- End of header -->
@@ -112,7 +112,7 @@
                      dosen pembimbing dapat melakukan penyempurnaan pada penelitian.
                    </p>
                
-                   <a class="action" href="#">
+                   <a class="action" href="#" id="detail-jupen">
                      Detail
                      <span aria-hidden="true">
                        →
@@ -138,7 +138,7 @@
                    Blue print alat ukur).
                  </p>
              
-                 <a class="action" href="#">
+                 <a class="action" href="#" id="detail-bimbingan">
                    Detail
                    <span aria-hidden="true">
                      →
@@ -164,7 +164,7 @@
                      penalaran dan analisis mahasiswa.
                    </p>
                
-                   <a class="action" href="#">
+                   <a class="action" href="#" id="detail-sidang">
                      Detail
                      <span aria-hidden="true">
                        →
@@ -181,7 +181,8 @@
     <!-- Kode ini merupakan bagian untuk menampilkan pop up ketika tombol detail di klik, terdapat informasi detail terkait bimbingan, termasuk waktu dan tanggal bimbingan -->
     <div class="popup-container" style="display: none;">
 
-      <div class="card popup">
+      <!-- Card popup  Penetapan Judul Penelitian  -->
+      <div class="card popup" id="popup-jupen">
           <div class="card-title">
               <h3>Pengumpulan Judul</h3>
           </div>
@@ -221,7 +222,9 @@
        </div>
      </div>
 
-     <div class="card popup">
+
+    <!-- Card popup  Bimbingan dan Seminar  -->
+     <div class="card popup" id="popup-bimbingan">
           <div class="card-title">
               <h3>Jadwal Bimbingan dan Seminar</h3>
           </div>
@@ -259,7 +262,8 @@
        </div>
      </div>
 
-     <div class="card popup">
+       <!-- Card popup Jadwal Skripsi -->
+     <div class="card popup" id="popup-sidang">
           <div class="card-title">
               <h3>Jadwal Sidang Skripsi</h3>
           </div>
