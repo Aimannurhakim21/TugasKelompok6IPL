@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and register </title>
     <link rel="stylesheet" href="login.css">
-    <script src="https://kit.fontawesome.com/6a16e0bdd7.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/6a16e0bdd7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="form-box">
-        <h1 id="title">Login</h1>
-        <form>
-            <div class="input-group">
-                <div class="input-field" id="nameField">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Name">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-id-card"></i>
+                        <input type="text" placeholder="Nim" name="nim" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <p>Lost password<a href="#">Click Here!</a></p>
                 </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
+                <div class="btn-field">
+                    <button type="button" id="registerBtn"><a href="register.html">Register</a></button>
+                    <button type="submit" class="disable" id="loginBtn">Login</button>
                 </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password">
-                </div>
-                <p>Lost password<a href="#">Click Here!</a></p>
-            </div>
-            <div class="btn-field">
-                <button type="button" id="registerBtn"><a href="Register.html">Register</a></button>
-                <button type="button" class="disable" id="loginBtn"><a href="home.html">Login</a></button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    </div>
 
-<script>
+    <script>
+        let registerBtn = document.getElementById("registerBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
 
-    let registerBtn = document.getElementById("registerBtn");
-    let loginBtn = document.getElementById("loginBtn");
-    let nameField = document.getElementById("nameField");
-    let title = document.getElementById("title");
-    
-    loginBtn.onclick = function(){
-        nameField.style.maxHeight = "0";
-        title.innerHTML = "Login";
-        registerBtn.classList.add("disable");
-        loginBtn.classList.remove("disable");
- 
-    }
+        loginBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Login";
+            registerBtn.classList.remove("disable");
+            loginBtn.classList.add("disable");
+        }
 
-    registerBtn.onclick = function(){
-        nameField.style.maxHeight = "60px";
-        title.innerHTML = "Login";
-        registerBtn.classList.remove("disable");
-        loginBtn.classList.add("disable");
-
-    }
-</script>
+        registerBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Register";
+            registerBtn.classList.add("disable");
+            loginBtn.classList.remove("disable");
+        }
+    </script>
 </body>
+
 </html>
