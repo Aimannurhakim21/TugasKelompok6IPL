@@ -13,24 +13,28 @@
     <div class="container">
         <div class="form-box">
             <h1 id="title">Register</h1>
-            <form action="login.html" method="post">
-                <div class="input-group">
+            <form  action="HalamanRegister.php"method="POST">
+                <div class="input-group">        
+                    <div class="input-field">
+                        <i class="fas fa-id-card"></i>
+                        <input type="text" placeholder="Nim" name="nim" required>
+                    </div>
                     <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fas fa-user"></i>
                         <input type="text" placeholder="Name" name="name" required>
                     </div>
                     <div class="input-field">
-                        <i class="fa-solid fa-id-card"></i>
-                        <input type="text" placeholder="Nim" name="nim" required>
+                        <i class="fas fa-id-card"></i>
+                        <input type="text" placeholder="Username" name="username" required>
                     </div>
                     <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" name="password" required>
                     </div>
-                    <p>I already have an account? <a href="login.html">Login Now</a></p>
+                    <p>I already have an account? <a href="index.html">Login Now</a></p>
                 </div>
-                <div class="btn-field">
-                    <button type="submit">Register</button>
+                <div class="btn-field">  
+                    <button type="submit"><a href="index.html"></a>Register</button>
                 </div>
             </form>
         </div>
