@@ -33,6 +33,7 @@ nav {
   justify-content: center;
   align-items: center;
   column-gap: 1em;
+  /* gap: 2em; */
 }
 
 .dropdown {
@@ -143,9 +144,9 @@ nav {
   background-color: #fffffe;
   border: none;
   color: #646464;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 10px;
-  width: 7em;
+  width: 10em;
   transition: all ease-in-out .5s;
   margin-right: -2rem;
 }
@@ -188,9 +189,9 @@ nav {
 main {
   background-color: #fffffe;
   margin: 1em auto;
-  width: 45%;
+  width: 55%;
   padding: 1em;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 #top-main {
@@ -199,18 +200,19 @@ main {
   justify-content: space-between;
 }
 
+
 #card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card {
   max-width: 400px;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   background-color: #F9F9F9;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
@@ -221,14 +223,14 @@ main {
 }
 
 .content {
-  padding: 2.1rem;
+  padding: 1.1rem;
 }
 
 .image1 {
   object-fit: contain;
   width: 100%;
   height: 150px;
-  background: url("../Image/smbr.jpg") no-repeat center center;
+  background: url("../Image/SMNR.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -236,7 +238,7 @@ main {
   object-fit: contain;
   width: 100%;
   height: 150px;
-  background: url("../Image/SMNR.jpg") no-repeat center center;
+  background: url("../Image/smbr.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -258,10 +260,101 @@ main {
   display: inline-flex;
   margin-top: 1rem;
   color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
   gap: 0.25rem;
   background-color: #111827;
   padding: 15px 30px;
   border-radius: 14px;
+}
+
+
+/* Kode untuk styling layar dengan lebar maksimal 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #notif-icon,
+  #x-icon {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-right: 3em;
+  }
+
+  .dropdown-container {
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fffffe;
+    min-width: 10em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: #191919;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  #search-header {
+    display: none;
+  }
+
+  #profile-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.2em 1em 0 0;
+  }
+
+  #profile-header p {
+    display: none;
+  }
+
+  #img-profile-header {
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+  }
+
+  #title-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
