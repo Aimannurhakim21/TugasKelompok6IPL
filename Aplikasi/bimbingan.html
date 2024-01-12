@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bimbingan/assets/css/style.css">
+
+    <!-- CDN Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CDN Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;1,100&display=swap" rel="stylesheet">
+
+    <title>Website Bimbingan</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+
+    <!-- Bagian ini merupakan kode untuk membuat navigation bar -->
+    <nav>
+        <!-- Section sebelah kiri - Dropdown Menu -->
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropbtn">Menu
+                    <span>
+                        <i class="fa-solid fa-chevron-down" style="color: #191919;"></i>
+                    </span>
+                </button>
+                <div class="dropdown-content">
+                  <a href="halamanutama.html">Halaman Utama</a>
+                  <a href="Pengambilantopik.html">Pengambilan Topik</a>
+                  <a href="bimbingan.html">Bimbingan</a>
+                  <a href="seminar.html">Seminar</a>
+                </div>
+            </div>
+            <span>
+                <img src="Bimbingan/assets/img/bell.svg" alt="Notif-icon" srcset="" id="notif-icon">
+            </span>
+        </div>
+
+        <!-- Section tengah - Nama Brand -->
+        <div class="navbar-brand">Universitas XYZ</div>
+
+
+        <!-- Section kanan - Logo X -->
+        <div>
+          <a href="logout.php" onclick="return confirm('Apakah Anda Yakin ?')"><img src="Bimbingan/assets/img/x-circle.svg" alt="X-icon" srcset="" id="x-icon"></a>
+        </div>
+        
+    </nav>
+    <!-- End of navbar -->
+    
+    <!-- Header -->
+    <!-- Kode untuk membuat bagian atas website (bawah navbar), terdiri dari judul, searchbar, dan icon profile pengguna -->
+    <div id="header">
+        <div id="search-header">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Search">
+                <button class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="title-header">
+            <h1>Bimbingan</h1>
+            <p>Jurusan Informatika</p>
+        </div>
+
+        <div id="profile-header">
+            <div id="img-profile-header">
+               <img src="Bimbingan/assets/img/user.svg" alt="user-icon" srcset="">
+            </div>
+            <p>Mahasiswa</p>
+        </div>
+    </div>
+    <!-- End of header -->
+
+    <!-- Main -->
+    <!-- Kode untuk membuat bagian utama pada website, yaitu informasi bimbingan, dimana didalamnya tersusun dari card-card -->
+    <main>
+        <div id="top-main">
+            <h2>Kegiatan Bimbingan</h2>
+            <div id="icon-exclamation">
+                <i class="fa-solid fa-exclamation" style="color: #191919; width: 20px; height: 20px;"></i>
+            </div>
+        </div>
+        
+        <hr style="margin: 1em 0;">
+
+        <div id="card-container">
+          <!-- Card yang berguna untuk menampilkan informasi dari setiap bimbingan -->
+            <div class="card">
+                <div class="image">
+                </div>
+                 <div class="content">
+                   <a href="#">
+                     <span class="title">
+                       Penetapan Judul Penelitian
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                     Mahasiswa mempresentasikan topik/judul yang akan diteliti. meliputi
+                     Perumusan Masalah, Tujuan dan Manfaat Penelitian. Pada tahap ini
+                     dosen pembimbing dapat melakukan penyempurnaan pada penelitian.
+                   </p>
+               
+                   <a class="action" href="#" id="detail-jupen">
+                     Detail
+                     <span aria-hidden="true">
+                       →
+                     </span>
+                   </a>
+                 </div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+              </div>
+               <div class="content">
+                 <a href="#">
+                   <span class="title">
+                     Bimbingan dan Seminar
+                   </span>
+                 </a>
+             
+                 <p class="desc">
+                   Mahasiswa mempresentasikan proposal (Perumusan Masalah, Tujuan dan Manfaat
+                   Penelitian, Tujuan Pustaka, Kerangka berpikir dan hipotesis).
+                   Persentasi Proposal (Tujuan Pustaka, Kerangka Berpikir dan Hipotesis,
+                   Blue print alat ukur).
+                 </p>
+             
+                 <a class="action" href="#" id="detail-bimbingan">
+                   Detail
+                   <span aria-hidden="true">
+                     →
+                   </span>
+                 </a>
+               </div>
+          </div>
+
+             <div class="card">
+                <div class="image">
+                </div>
+                 <div class="content">
+                   <a href="#">
+                     <span class="title">
+                       Sidang Skripsi
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                     Merupakan perjuangan akhir bagi seorang mahasiswa agar dapat memperoleh
+                     gelar sarjana setelah bertahun - tahun menjalani masa perkuliahan.
+                     Sidang skripsi juga bertujuan untuk melakukan penilaian terhadap
+                     penalaran dan analisis mahasiswa.
+                   </p>
+               
+                   <a class="action" href="#" id="detail-sidang">
+                     Detail
+                     <span aria-hidden="true">
+                       →
+                     </span>
+                   </a>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- End of main -->
+
+    <!-- Popup Card -->
+    <!-- Kode ini merupakan bagian untuk menampilkan pop up ketika tombol detail di klik, terdapat informasi detail terkait bimbingan, termasuk waktu dan tanggal bimbingan -->
+    <div class="popup-container" style="display: none;">
+
+      <!-- Card popup  Penetapan Judul Penelitian  -->
+      <div class="card popup" id="popup-jupen">
+          <div class="card-title">
+              <h3>Pengumpulan Judul</h3>
+          </div>
+          <div class="image"></div>
+       <div class="content">
+         <a href="#">
+             <span class="title">
+              Penetapan Judul Penelitian
+          </span>
+         </a>
+         
+         <p class="desc">
+             Mahasiswa mengajukan Judul Penelitian kepada dosen bimbingan,
+             disarankan untuk menyiapkan minimal tiga judul skripsi apabila
+             ada penolakan dari dosen pembimbing
+             
+          </p>
+
+          <div class="datetime">
+            <div class="date">
+              <i class="fa-regular fa-calendar" style="color: #191919;"></i>
+              <p>05 Januari 2024</p>
+            </div>
+            
+            <div class="time">
+              <i class="fa-regular fa-clock" style="color: #191919;"></i>
+              <p>10.00 - 11.00 WIB</p>
+            </div>
+          </div>
+          
+          <a class="action" href="#">
+              Masuk
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+
+
+    <!-- Card popup  Bimbingan dan Seminar  -->
+     <div class="card popup" id="popup-bimbingan">
+          <div class="card-title">
+              <h3>Jadwal Bimbingan dan Seminar</h3>
+          </div>
+          <div class="image"></div>
+       <div class="content">
+         <a href="#">
+             <span class="title">
+              Bimbingan dan Seminar
+          </span>
+         </a>
+         
+         <p class="desc">
+             Mahasiswa mempresentasikan proposal serta Persentasi proposal
+             dengan bobot penilaian 15%
+          </p>
+
+          <div class="datetime">
+            <div class="date">
+              <i class="fa-regular fa-calendar" style="color: #191919;"></i>
+              <p>13-27 Februari 2024</p>
+            </div>
+            
+            <div class="time">
+              <i class="fa-regular fa-clock" style="color: #191919;"></i>
+              <p>07.00 - 12.00 WIB</p>
+            </div>
+          </div>
+          
+          <a class="action" href="#">
+              Masuk
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+
+       <!-- Card popup Jadwal Skripsi -->
+     <div class="card popup" id="popup-sidang">
+          <div class="card-title">
+              <h3>Jadwal Sidang Skripsi</h3>
+          </div>
+          <div class="image"></div>
+       <div class="content">
+         <a href="#">
+             <span class="title">
+              Sidang Skripsi
+          </span>
+         </a>
+         
+         <p class="desc">
+             Tujuan untuk menilai wawasan, pengetahuan, kemampuan, dan juga kedalaman 
+             akademik yang dimiliki seorang mahasiswa dengan bobot penilaian 50%
+          </p>
+
+          <div class="datetime">
+            <div class="date">
+              <i class="fa-regular fa-calendar" style="color: #191919;"></i>
+              <p>15 Desember 2024</p>
+            </div>
+            
+            <div class="time">
+              <i class="fa-regular fa-clock" style="color: #191919;"></i>
+              <p>09.00 - 16.00 WIB</p>
+            </div>
+          </div>
+          
+          <a class="action" href="#">
+              Masuk
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+  </div>
+    <!-- End of popup card -->
+
+
+<script src="Bimbingan/assets/js/index.js"></script>
+</body>
+</html>

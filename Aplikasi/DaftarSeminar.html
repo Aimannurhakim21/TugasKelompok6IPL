@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Seminar/css/DaftarSeminar.css">
+
+    <!-- CDN Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CDN Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;1,100&display=swap"
+        rel="stylesheet">
+
+    <title>Seminar</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropbtn">Menu
+                    <span>
+                        <i class="fa-solid fa-chevron-down" style="color: #191919;"></i>
+                    </span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="halamanutama.html">Halaman Utama</a>
+                    <a href="Pengambilantopik.html">Pengambilan Topik</a>
+                    <a href="bimbingan.html">Bimbingan</a>
+                    <a href="seminar.html">Seminar</a>
+                </div>
+            </div>
+            <span>
+                <img src="Seminar/icon/bell.svg" alt="Notif-icon" srcset="" id="notif-icon">
+            </span>
+        </div>
+
+        <div class="navbar-brand">Universitas XYZ</div>
+
+        <div>
+            <a href="logout.php" onclick="return confirm('Apakah Anda Yakin ?')"><img src="Seminar/icon/x-circle.svg" alt="X-icon" srcset="" id="x-icon"></a>
+        </div>
+
+    </nav>
+
+    <div id="header">
+        <div id="search-header">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Search">
+                <button class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="title-header">
+            <h1>Daftar Seminar Tugas Akhir</h1>
+        </div>
+
+        <div id="profile-header">
+            <div id="img-profile-header">
+                <img src="Seminar/icon/user.svg" alt="user-icon" srcset="">
+            </div>
+            <p> User</p>
+        </div>
+    </div>
+
+    <form id="dataDiriForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="name" name="nama" required>
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+
+        <label for="prodi">Program Studi:</label>
+        <input type="text" id="prodi" name="prodi" required>
+
+        <label for="semester">Semester:</label>
+        <select id="jurusan" name="jurusan" required>
+            <option value="Semester"></option>
+            <option value="Semester">Semester 7</option>
+            <option value="Semester">Semester 8</option>
+        </select>
+
+        <label for="Tugas Akhir">Tugas Akhir</label>
+        <select id="Tugas Akhir" name="Tugas Akhir" required>
+            <option value="Tugas Akhir 1">Tugas Akhir 1</option>
+            <option value="Tugas Akhir 2">Tugas Akhir 2</option>
+        </select>
+
+        <label for="Judul">Judul:</label>
+        <textarea id="Judul" name="Judul" rows="4" required></textarea>
+        
+        <label for="fileInput">Upload File:</label>
+        <input type="file" id="fileInput" name="fileInput" accept=".pdf, .doc, .docx">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
